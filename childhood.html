@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Childhood Memories</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    }
+
+    /* MAIN CARD */
+    .section {
+      background: #ffffff;
+      width: 100%;
+      max-width: 100%;
+      padding: 35px 20px 45px;
+      margin: 0;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(25px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 30px;
+      color: #6a1b9a;
+      margin-bottom: 25px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.9;
+      margin-bottom: 20px;
+    }
+
+    /* PHOTO STYLING */
+    .photo {
+      width: 80%;
+      max-width: 400px;
+      border-radius: 18px;
+      margin: 25px auto;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      display: block;
+    }
+
+    .photo:hover {
+      transform: scale(1.03);
+    }
+
+    /* NEXT BUTTON */
+    .next-btn {
+      padding: 14px 40px;
+      font-size: 17px;
+      border: none;
+      border-radius: 35px;
+      background: linear-gradient(135deg, #d81b60, #6a1b9a);
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      margin-top: 30px;
+    }
+
+    .next-btn:hover {
+      transform: scale(1.07);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    }
+
+    /* DESKTOP VIEW */
+    @media (min-width: 768px) {
+      .section {
+        max-width: 900px;
+        margin: 30px auto;
+        border-radius: 22px;
+        padding: 45px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="section">
+    <h1>🌸 Baby Sejal Ma’am 🌸</h1>
+
+    <!-- PHOTO -->
+    <img src="photo1.jpg" alt="Baby Sejal" class="photo">
+
+    <!-- STORY PARAGRAPHS -->
+    <p>तो चलिए, मिलते हैं हमारी Baby Sejal Ma’am से 💖</p>
+
+    <p>
+      🎉 <strong>26 जनवरी 2004</strong> को  
+      Ma’am ने इस दुनिया में अपनी धमाकेदार एंट्री ली थी 😄  
+      पूरा तलेगांव धमधेरे खुशी से झूम उठा था ✨
+    </p>
+
+    <p>
+      लेकिन किसे पता था कि ये नन्ही सी, प्यारी सी बच्ची  
+      आगे चलकर लाखों दिलों पर राज करने वाली है 💫
+    </p>
+
+    <p>
+      🧸 जब हम बचपन में खिलौनों से खेलते थे,  
+      तब हमारी प्यारी Ma’am शायद मेकअप किट के साथ खेलती होंगी 😉
+    </p>
+
+    <p>
+      🌸 जितनी cute आप बचपन में थीं,  
+      आज उससे भी कहीं ज़्यादा cute होती जा रही हो 🥰
+    </p>
+
+    <p>
+      😄 Ma’am, हमें भी बताइए आप कौन सी चक्की का आटा खाती हो 🤭
+    </p>
+
+    <p>
+      1st floor, 2nd floor और building से कुदने की आदत तो mam को बचपन से हैं,  
+      लेकिन कौन जानता था कि कूदते कूदते mam SuperHero 🦸‍♂️ बन जाएगी
+    </p>
+
+    <!-- NEXT BUTTON -->
+    <button class="next-btn" onclick="goNextPage()">NEXT →</button>
+
+  </div>
+
+  <script>
+    function goNextPage() {
+      window.location.href = "schooling.html";
+    }
+  </script>
+
+</body>
+</html>

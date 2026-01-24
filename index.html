@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(25px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      width: 100%;
+      max-width: 700px;
+      background: #ffffff;
+      padding: 35px 25px 45px;
+      border-radius: 22px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      animation: fadeIn 1.2s ease-in-out;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #6a1b9a;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.9;
+      margin-bottom: 35px;
+      text-align: center;
+    }
+
+    small {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .start-btn {
+      padding: 14px 45px;
+      font-size: 17px;
+      border: none;
+      border-radius: 35px;
+      background: linear-gradient(135deg, #d81b60, #6a1b9a);
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .start-btn:hover {
+      transform: scale(1.07);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      .container {
+        padding: 45px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Hello Ma’am 🌸</h1>
+
+    <p>
+      This is Radhika Yadav (batch-28), all the way from Mumbai !!<br><br>
+
+      <small><em>
+        (Currently, I’m in Mumbai, which is why I’m not able to come and celebrate your birthday with you.
+        So I decided to send you gifts instead.
+        I truly hope you like them.
+        I’ll be coming to Pune after 20th February, and I’m really looking forward to meeting you then.)
+      </em></small><br><br>
+
+      First of all, wishing you a very Happy Birthday 🎉<br>
+      On this special day, I wanted to do something meaningful for you,<br>
+      and I truly hope you like it.<br><br>
+
+      When you press <strong>START</strong>,<br>
+      your journey begins…
+    </p>
+
+    <button class="start-btn" onclick="goNext()">
+      START →
+    </button>
+  </div>
+
+  <script>
+    function goNext() {
+      document.body.style.opacity = "0";
+      setTimeout(() => {
+        window.location.href = "main.html";
+      }, 500);
+    }
+  </script>
+
+</body>
+</html>

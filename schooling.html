@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Life</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    }
+
+    /* MAIN CARD */
+    .section {
+      background: #ffffff;
+      width: 100%;
+      max-width: 100%;
+      padding: 35px 20px 45px;
+      margin: 0;
+      text-align: center; /* Center all text */
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(25px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 30px;
+      color: #6a1b9a;
+      margin-bottom: 25px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.9;
+      margin-bottom: 20px;
+      text-align: center; /* Center all text */
+    }
+
+    /* IMAGE STYLING */
+    .photo {
+      width: 80%;
+      max-width: 420px;
+      border-radius: 18px;
+      margin: 25px auto;
+      display: block;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .photo:hover {
+      transform: scale(1.04);
+    }
+
+    /* NEXT BUTTON */
+    .next-btn {
+      padding: 14px 40px;
+      font-size: 17px;
+      border: none;
+      border-radius: 35px;
+      background: linear-gradient(135deg, #d81b60, #6a1b9a);
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      margin-top: 35px;
+    }
+
+    .next-btn:hover {
+      transform: scale(1.07);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    }
+
+    /* DESKTOP VIEW */
+    @media (min-width: 768px) {
+      .section {
+        max-width: 900px;
+        margin: 30px auto;
+        border-radius: 22px;
+        padding: 45px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="section">
+    <h1>🏫 School Life – The Real Sejal Ma’am 💫</h1>
+
+    <!-- SCHOOL IMAGE -->
+    <img src="photo2.jpg" alt="School Life" class="photo">
+
+    <p>
+      किसे पता था कि  
+      Baseball bat से ज़ोरदार shot मारने वाली वो लड़की  
+      आगे चलकर एक <strong>Professional Makeup Artist</strong> बनेगी ✨
+    </p>
+
+    <p>
+      वैसे Sejal Ma’am की school life  
+      बिल्कुल भी साधारण नहीं थी 😎  
+      वो एक <strong>bindass girl</strong> थीं —  
+      Live example of confidence!
+    </p>
+
+    <p>
+      लड़कियाँ उनसे जलती थीं 🔥  
+      और लड़के…  
+      थोड़ा डरकर ही रहते थे 😄  
+      पूरी <strong>#दहशत</strong> थी Ma’am की 😏
+    </p>
+
+    <p>
+      पढ़ाई की बात करें तो  
+      Ma’am हमेशा <strong>top</strong> पर रही हैं 📚  
+      चाहे Board Exams हों,  
+      Semester Exams हों  
+      या Intermediate Drawing Exams 🎨  
+      हर जगह excellence दिखाया है 👏
+    </p>
+
+    <p>
+      Dance 💃, Singing 🎤  
+      शायद ये talent भी  
+      school days से ही साथ रहे होंगे 😉
+    </p>
+
+    <p>
+      दोस्तों की बात करें तो  
+      Ma’am का अपना एक group था 🤝  
+      लेकिन वक्त के साथ  
+      कई दोस्त छूट भी गए…  
+      पर कोई बात नहीं,  
+      क्योंकि कभी-कभी  
+      अपने ही लोग  
+      अपनी success देख नहीं पाते 💭
+    </p>
+
+    <p>
+      Teachers की तो  
+      हमेशा से favourite रही हैं Ma’am 🌟  
+      और कुछ teachers को  
+      थोड़ा चिढ़ाने में भी  
+      top पर थीं 😄
+    </p>
+
+    <p>
+      School में  
+      ना किसी से Love ❤️  
+      ना किसी से Fight ⚔️  
+      क्योंकि  
+      <strong>My Sejal Ma’am was always RIGHT 😉✨</strong>
+    </p>
+
+    <!-- NEXT BUTTON -->
+    <button class="next-btn" onclick="goNextPage()">NEXT →</button>
+  </div>
+
+  <script>
+    function goNextPage() {
+      window.location.href = "family.html";
+    }
+  </script>
+
+</body>
+</html>

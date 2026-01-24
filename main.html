@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sejal Mam Memories</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    }
+
+    /* SHLOK HERO */
+    .shlok-hero {
+      width: 100%;
+      padding: 40px 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .shlok-card {
+      background: #ffffff;
+      width: 100%;
+      max-width: 100%;
+      padding: 30px 20px;
+      border-radius: 0;
+      box-shadow: none;
+      text-align: center;
+    }
+
+    .shlok {
+      font-size: 22px;
+      font-style: italic;
+      line-height: 1.9;
+      color: #6a1b9a;
+    }
+
+    .shlok-meaning {
+      margin-top: 18px;
+      font-size: 16px;
+      color: #444;
+    }
+
+    /* MAIN SECTION */
+    .section {
+      background: #ffffff;
+      width: 100%;
+      max-width: 100%;
+      padding: 35px 20px 45px;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 30px;
+      color: #6a1b9a;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.9;
+      margin-bottom: 30px;
+    }
+
+    /* BUTTON */
+    .next-btn {
+      padding: 14px 40px;
+      font-size: 17px;
+      border: none;
+      border-radius: 35px;
+      background: linear-gradient(135deg, #d81b60, #6a1b9a);
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .next-btn:hover {
+      transform: scale(1.07);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    }
+
+    /* ANIMATION */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* DESKTOP VIEW */
+    @media (min-width: 768px) {
+      .shlok-card {
+        max-width: 900px;
+        margin: 30px auto;
+        border-radius: 22px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        padding: 40px;
+      }
+
+      .section {
+        max-width: 900px;
+        margin: 30px auto;
+        border-radius: 22px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        padding: 45px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- SHLOK INTRO -->
+  <div class="shlok-hero">
+    <div class="shlok-card">
+      <div class="shlok">
+        गुरुर्ब्रह्मा गुरुर्विष्णुः
+        गुरुर्देवो महेश्वरः<br>
+        गुरुः साक्षात् परब्रह्म
+        तस्मै श्री गुरुवे नमः
+      </div>
+
+      <div class="shlok-meaning">
+        To you, my Ma’am — who guides us like Krishna,  
+        gives strength like Mahadeva,  
+        and blesses us like Bappa.
+      </div>
+    </div>
+  </div>
+
+  <!-- INTRO CONTENT -->
+  <div class="section">
+    <h1>Unstoppable – The Sejal 🌸</h1>
+
+    <p>
+      सोचा शुरू करने से पहले, गुरु मंत्र आपको dedicate करदू<br>
+      Thank You Mam, for starting your own journey.😊<br>
+     <br><br>
+
+      तो दोस्तों, आज मैं आपको मिलाने जा रही हूँ<br>
+      उस शख़्सियत से जिनका नाम है <strong>Sejal Jagtap</strong>।<br><br>
+
+      नहीं नहीं…<br>
+      <strong>“THE Sejal Jagtap”</strong>
+    </p>
+
+    <button class="next-btn" onclick="goNextPage()">NEXT →</button>
+  </div>
+
+  <script>
+    function goNextPage() {
+      window.location.href = "childhood.html";
+    }
+  </script>
+
+</body>
+</html>
