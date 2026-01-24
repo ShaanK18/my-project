@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You Ma’am</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background: #ffffff;
+            max-width: 900px;
+            margin: 20px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            animation: fadeIn 1.2s ease-in-out;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #6a1b9a;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.9;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .highlight {
+            color: #6a1b9a;
+            font-weight: 500;
+        }
+
+        .inspiration {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #d81b60;
+            text-align: center;
+        }
+
+        /* SURPRISE BUTTON */
+        .gift-btn {
+            margin-top: 35px;
+            padding: 14px 35px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            background: #6a1b9a;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .gift-btn:hover {
+            background: #4a148c;
+            transform: scale(1.05);
+        }
+
+        /* VIDEO POPUP */
+        .video-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+        }
+
+        .video-box {
+            background: #fff;
+            padding: 15px;
+            border-radius: 15px;
+            max-width: 90%;
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .action-btn {
+            margin: 8px;
+            background: #d81b60;
+            color: #fff;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .download-btn {
+            background: #4caf50;
+        }
+
+        .popup-note {
+            margin-top: 12px;
+            font-size: 12.5px;
+            font-style: italic;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .popup-note span {
+            display: block;
+            margin-top: 6px;
+            font-weight: 500;
+            color: #6a1b9a;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Thank You Ma’am 💐</h1>
+
+    <p>
+        सबसे पहले मैं आपसे माफ़ी मांगना चाहती हूँ, <span class="highlight">ma’am</span>।
+        अगर इस website में मैंने कुछ ऐसा लिखा हो जो आपको अच्छा न लगा हो या जिससे आपको hurt हुआ हो,
+        तो उसके लिए मैं <span class="highlight">extremely sorry</span>.
+        <span class="highlight">Because I did a lot of research, and only after that I wrote your story.</span>
+    </p>
+
+    <p>
+        मैंने यह सब इसलिए किया क्योंकि मैं अपनी <span class="highlight">ma’am</span> का दिन
+        बहुत खास बनाना चाहती थी, और अगर इसकी वजह से आपके चेहरे पर ज़रा-सी भी
+        <span class="highlight">smile</span> आई हो,
+        तो मुझे खुद पर proud है कि मैं अपनी ma’am की smile की वजह बन सकी।
+    </p>
+
+    <p>
+        मेरी बनाई हुई website देखने के लिए अपने busy schedule में से समय निकालने के लिए
+        <span class="highlight">very very thank you</span>,
+        क्योंकि इसे बनाने में मैंने कितनी मेहनत और कितने efforts लिए हैं,
+        यह सिर्फ़ मैं ही जानती हूँ 😊
+    </p>
+
+    <p>
+        Ma’am, आपकी journey सच में बहुत inspiring है,
+        जिससे हम सभी को आगे बढ़ने की प्रेरणा मिलती है।
+    </p>
+
+    <div class="inspiration">
+        You are not only our Ma’am,<br>
+        You are our Inspiration ✨🖤
+    </div>
+
+    <button class="gift-btn" onclick="openVideo()">🎁 Special Gift</button>
+</div>
+
+<!-- VIDEO POPUP -->
+<div class="video-overlay" id="videoPopup">
+    <div class="video-box" style="max-height: 95vh; display:flex; flex-direction:column; justify-content:center;">
+        <video id="surpriseVideo" controls style="width:100%; max-height:70vh; border-radius:10px; margin-bottom:6px;">
+            <source src="surprise30.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+
+        <div style="display:flex; justify-content:center; gap:10px; margin-bottom:6px;">
+            <a href="surprise30.mp4" download>
+                <button class="action-btn download-btn" style="padding:8px 22px; font-size:14px;">⬇ Download</button>
+            </a>
+            <button class="action-btn" onclick="closeVideo()" style="padding:8px 22px; font-size:14px;">❌ Close</button>
+        </div>
+         <div class="popup-note" style="font-size:13px; line-height:1.4; text-align:center; margin:0;">
+    If this small effort truly touched your heart and you genuinely feel like thanking me,<br>
+    I would be really happy to hear from you.<br>
+    Please feel free to message me on Instagram. <br>
+    <span>
+        <a href="https://www.instagram.com/radhika.yadav233?igsh=MXBnbDF4enRncWo3NQ==" 
+           target="_blank" 
+           style="color:#6a1b9a; text-decoration:none; font-weight:500; font-style:normal;">
+           @radhika.yadav233
+        </a>
+    </span>
+</div>
+       
+    </div>
+</div>
+    
+<script>
+    function openVideo() {
+        document.getElementById("videoPopup").style.display = "flex";
+    }
+
+    function closeVideo() {
+        document.getElementById("videoPopup").style.display = "none";
+        document.getElementById("surpriseVideo").pause();
+    }
+</script>
+
+</body>
+</html>
