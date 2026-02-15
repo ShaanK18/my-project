@@ -5,7 +5,6 @@
     <title>Thank You Ma’am</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
@@ -32,14 +31,8 @@
         }
 
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         h1 {
@@ -69,7 +62,6 @@
             text-align: center;
         }
 
-        /* SURPRISE BUTTON */
         .gift-btn {
             margin-top: 35px;
             padding: 14px 35px;
@@ -87,7 +79,6 @@
             transform: scale(1.05);
         }
 
-        /* VIDEO POPUP */
         .video-overlay {
             position: fixed;
             top: 0;
@@ -185,7 +176,6 @@
     <button class="gift-btn" onclick="openVideo()">🎁 Special Gift</button>
 </div>
 
-<!-- VIDEO POPUP -->
 <div class="video-overlay" id="videoPopup">
     <div class="video-box" style="max-height: 95vh; display:flex; flex-direction:column; justify-content:center;">
         <video id="surpriseVideo" controls style="width:100%; max-height:70vh; border-radius:10px; margin-bottom:6px;">
@@ -197,32 +187,31 @@
             <a href="surprise.mp4" download>
                 <button class="action-btn download-btn" style="padding:8px 22px; font-size:14px;">⬇ Download</button>
             </a>
-            <button class="action-btn" onclick="closeVideo()" style="padding:8px 22px; font-size:14px;">❌ Close</button>
+            <button class="action-btn" onclick="goNext()" style="padding:8px 22px; font-size:14px;">➡ Next</button>
         </div>
-         <div class="popup-note" style="font-size:13px; line-height:1.4; text-align:center; margin:0;">
-    I recorded this video on your birthday, but sadly I couldn’t deliver it to you that day as you weren’t available.<br>
-    If this small effort truly touched your heart and you genuinely feel like thanking me,<br>
-    Please feel free to message me on Instagram. <br>
-    <span>
-        <a href="https://www.instagram.com/radhika.yadav233?igsh=MXBnbDF4enRncWo3NQ==" 
-           target="_blank" 
-           style="color:#6a1b9a; text-decoration:none; font-weight:500; font-style:normal;">
-           @radhika.yadav233
-        </a>
-    </span>
-</div>
-       
+
+        <div class="popup-note" style="font-size:13px; line-height:1.4; text-align:center; margin:0;">
+            I recorded this video on your birthday, but sadly I couldn’t deliver it to you that day as you weren’t available.<br>
+            If this small effort truly touched your heart and you genuinely feel like thanking me,<br>
+            Please feel free to message me on Instagram. <br>
+            <span>
+                <a href="https://www.instagram.com/radhika.yadav233?igsh=MXBnbDF4enRncWo3NQ==" 
+                   target="_blank" 
+                   style="color:#6a1b9a; text-decoration:none; font-weight:500; font-style:normal;">
+                   @radhika.yadav233
+                </a>
+            </span>
+        </div>
     </div>
 </div>
-    
+
 <script>
     function openVideo() {
         document.getElementById("videoPopup").style.display = "flex";
     }
 
-    function closeVideo() {
-        document.getElementById("videoPopup").style.display = "none";
-        document.getElementById("surpriseVideo").pause();
+    function goNext() {
+        window.location.href = "note.html";
     }
 </script>
 
